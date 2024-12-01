@@ -104,7 +104,15 @@ fun TampilView(
                     fontWeight = FontWeight.Light,
                     fontSize = 16.sp)
             }
-
+            Row (modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly){
+                Button(onClick = {onBackButtonClicked()}) {
+                    Text(text = "Kembali")
+                }
+                Button(onClick = {onResetButtonClicked()}) {
+                    Text(text = "Reset")
+                }
+            }
         }
     }
 }
