@@ -16,15 +16,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.example.quest6_125.R
 
 
 @Composable
 fun SplashView(
     onMulaiButton: ()-> Unit,
 ){
-    val R = null
     Column(
-        modifier = Modifier.fillMaxSize().background(color = colorResource(id = R.colors.primary)),
+        modifier = Modifier.fillMaxSize().background(color = colorResource(id = R.color.primary)),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {

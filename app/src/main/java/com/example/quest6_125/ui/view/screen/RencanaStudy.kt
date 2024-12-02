@@ -108,7 +108,6 @@ fun RencanaStudyView(
                 options = MataKuliah.options,
                 label = "Mata Kuliah",
                 onValueChangedEvent = {
-                    val it = null
                     chosenDropDown = it
                 })
             Spacer(modifier = Modifier.padding(8.dp))
@@ -151,14 +150,4 @@ fun RencanaStudyView(
             }
         }
     }
-}
-
-@Composable
-fun DynamicSelectedField(
-    selectedValue: ERROR,
-    options: options,
-    label: String,
-    onValueChangedEvent: () -> Unit
-) {
-    TODO("Not yet implemented")
 }
